@@ -9,6 +9,8 @@
         <module name="analytics-service" />
         <module name="api-gateway" />
         <module name="patient-service" />
+        <module name="integration-tests" />
+        <module name="billing-service" />
       </profile>
       <profile name="Annotation profile for auth-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -18,7 +20,6 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.38/lombok-1.18.38.jar" />
         </processorPath>
         <module name="auth-service" />
-        <module name="billing-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -28,6 +29,7 @@
       <module name="api-gateway" options="-parameters" />
       <module name="auth-service" options="-parameters" />
       <module name="billing-service" options="-parameters" />
+      <module name="integration-tests" options="--enable-preview" />
       <module name="patient-service" options="-parameters" />
     </option>
   </component>
