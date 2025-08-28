@@ -1,5 +1,6 @@
 package com.pm.apigateway;
 
+import com.pm.apigateway.filter.Configuration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
